@@ -1,5 +1,7 @@
 # Cpu Scheduler
 
+## [Live Demo](https://imganpat.github.io/Cpu-Scheduler/)
+
 ## Project overview
 
 The CPU Scheduler is a web-based tool that simulates CPU scheduling algorithms by accepting inputs such as arrival time, process name, and burst time. The tool generates a Gantt chart and a result table, allowing users to visualize the scheduling process and analyze the performance of different scheduling algorithms.
