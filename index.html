@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Cpu Scheduling</title>
+  </head>
+  <body>
+    <div class="input">
+      <form id="form">
+        <div class="algorith-container input-fields">
+          <label for="algorithm">Algorithm</label>
+          <select name="algorithm" id="algorithm">
+            <option value="" selected disabled hidden>
+              Select the algorithm
+            </option>
+            <option value="fcfs">FCFS</option>
+          </select>
+        </div>
+
+        <div class="process-name-container input-fields">
+          <label for="processes">Process Name</label>
+          <input type="text" name="processes" id="processes" />
+        </div>
+
+        <div class="arival-time-container input-fields">
+          <label for="arival-time">Arival Time</label>
+          <input type="text" name="arival-time" id="arival-time" />
+        </div>
+
+        <div class="burst-time-container input-fields">
+          <label for="burst-time">Burst Time</label>
+          <input type="text" name="burst-time" id="burst-time" />
+        </div>
+
+        <div class="input-fields button-container">
+          <button type="reset" id="reset">Clear</button>
+          <button type="submit" id="submit">Generate</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="output">
+      <h2>Result</h2>
+      <p>Gantt Chart and Table will appear here...</p>
+      <div class="gantt-chart-container"></div>
+      <div class="table-container">
+        <table
+          class="visible hidden"
+          id="result"
+          cellspacing="0"
+          cellpadding="10"
+          border="1"
+          style="text-align: center"
+        ></table>
+      </div>
+      <p id="credit">
+        A mini project by
+        <a href="https://www.linkedin.com/in/imganpat/" target="_blank"
+          >Ganpat</a
+        >
+      </p>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

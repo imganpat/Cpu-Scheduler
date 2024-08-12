@@ -1,0 +1,222 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100dvh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #f1f1f1;
+}
+
+#form {
+  width: 25rem;
+  height: 35rem;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 2px,
+    rgba(15, 91, 206, 0.1) 0px 2px 32px;
+}
+
+.input-fields {
+  height: 5rem;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 0.9rem;
+  border-radius: 3px;
+}
+
+.input-fields > input,
+.input-fields > select {
+  height: 2.5rem;
+  padding-inline: 0.6rem;
+  background-color: #f1f1f1;
+  border: none;
+  border-radius: 4px;
+  caret-color: rgb(38, 136, 249);
+  outline: none;
+}
+
+.input-fields > input:focus,
+select:focus {
+  outline: 2px solid rgb(38, 136, 249);
+}
+
+.input-fields option {
+  margin: 2rem;
+}
+
+.input-fields > label {
+  letter-spacing: 1px;
+  font-size: 1rem;
+}
+
+.input-fields > button {
+  width: 10rem;
+  height: 2.7rem;
+  font-size: 1rem;
+  border: none;
+  color: aliceblue;
+  background-color: rgb(38, 136, 249);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.4s ease;
+}
+
+.input-fields button:hover {
+  background-color: rgb(33, 113, 204);
+}
+
+.button-container {
+  height: 3rem;
+  flex-direction: row;
+  align-self: center;
+}
+
+/* table sectiom */
+
+.output {
+  height: 35rem;
+  padding: 1rem 2rem;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 2px,
+    rgba(15, 91, 206, 0.1) 0px 2px 32px;
+}
+
+.output h2 {
+  font-size: 2.5rem;
+  font-weight: normal;
+}
+
+.output #result {
+  height: 14rem;
+  width: 45rem;
+}
+
+#result th {
+  color: aliceblue;
+  background-color: rgb(38, 136, 249);
+  padding: 0 1rem;
+}
+
+.gantt-chart-container::-webkit-scrollbar {
+  display: none;
+}
+
+.gantt-chart-container {
+  height: 8rem;
+  width: 40rem;
+  padding-inline: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-x: scroll;
+}
+
+.gantt-process {
+  min-height: 2.5rem;
+  min-width: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  position: relative;
+  border: 1px solid black;
+  border-right: none;
+}
+
+.gantt-process:last-child {
+  border-right: 1px solid black;
+}
+
+.gantt-process:first-child::before {
+  content: attr(data-content2);
+  position: absolute;
+  left: -0.5rem;
+  bottom: -1.7rem;
+}
+
+.gantt-process::after {
+  content: attr(data-content);
+  position: absolute;
+  right: -0.5rem;
+  bottom: -1.7rem;
+}
+
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+@media (max-width: 1100px) {
+  body {
+    flex-direction: column;
+    overflow: visible;
+    gap: 2rem;
+  }
+
+  #form {
+    height: 30rem;
+    width: 90vw;
+    border-radius: 10px;
+    margin-top: 1rem;
+  }
+
+  .input-fields > label {
+    letter-spacing: 0;
+    font-size: 0.9rem;
+  }
+
+  .input-fields > button {
+    height: 2.5rem;
+    width: 7rem;
+    font-size: 1rem;
+  }
+
+  .output {
+    order: 2;
+    width: 90vw;
+    padding: 1.5rem 1.2rem;
+    border-radius: 10px;
+  }
+
+  .output h2 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+  }
+
+  .table-container {
+    overflow-x: scroll;
+    box-shadow: inset(-5px) -2px 10px gray;
+    position: relative;
+  }
+
+  .gantt-chart-container {
+    width: 100%;
+    justify-content: start;
+    overflow-x: scroll;
+  }
+
+  .output #result {
+    width: 100%;
+  }
+
+  .output #credit {
+    margin-top: 1rem;
+  }
+}
