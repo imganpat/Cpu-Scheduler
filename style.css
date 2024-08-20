@@ -41,7 +41,7 @@ body {
 .input-fields > select {
   height: 2.5rem;
   padding-inline: 0.6rem;
-  background-color: #f1f1f1;
+  background-color: #fafafa;
   border: none;
   border-radius: 4px;
   caret-color: rgb(38, 136, 249);

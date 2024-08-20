@@ -19,6 +19,6 @@ The CPU Scheduler is a web-based tool that simulates CPU scheduling algorithms b
 - Click on the "Generate" button to create the Gantt chart and result table.
 - Analyze the results displayed on the screen.
 
-<img src="./screenshots/image.png" alt="input image" width="30%"/>
+<img src="./screenshots/image.png" alt="input image" height="50%"/>
 
 <img src="./screenshots/image-1.png" alt="result image" style="width:100vh; margin: auto;"/>
